@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './OpportunityInfo.css'
 import { useLocation, useParams } from 'react-router-dom';
+import { RecentOpenings } from "../RecentOpenings/RecentOpenings";
 
 export const OpportunityInfo = () => {
     const [isActive, setIsActive] = useState(false);
@@ -91,6 +92,7 @@ return (
                 <a href={option.link} target="_blank">Check Here To Apply</a>
             </div>
         </div>
+            <RecentOpenings/>
     </>
 )
 };

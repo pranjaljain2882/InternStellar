@@ -62,3 +62,11 @@
       transform: translateY(0);
     }
   }
+
+
+  
+@media screen and (max-width:1000px) {
+    .oppinfo{
+        width: 80%;
+    }
+}
