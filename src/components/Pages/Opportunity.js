@@ -36,7 +36,7 @@ return (
                             </div>
                             <div className='interntitle' className='interntitle' onClick={() => handleClick(option)}><b>{option.title}</b></div>
                             <div className="interndesc">Batch: {option.batch}</div>
-                            <div className="interndesc"><b className="subhead">Internship:</b> {option.date}</div>
+                            <div className="interndesc"><b className="subhead">{option.type}:</b> {option.date}</div>
                             {/* <div className="makebtnspace"></div> */}
                             {/* <div className="internbtn"><a href={option.link} target="_blank">Check Here...</a></div> */}
                         </div>

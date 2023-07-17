@@ -31,9 +31,24 @@ return (
                     <div className="subopp"> {option.stipend} </div>
                 </div>
             )}
+            {option.lastdate && (
+                <div className="opp"><b>Last Date to Apply:</b>
+                    <div className="subopp"> {option.lastdate} </div>
+                </div>
+            )}
+            {option.salary && (
+                <div className="opp"><b>Salary:</b>
+                    <div className="subopp"> {option.salary} </div>
+                </div>
+            )}
             {option.location && (
                 <div className="opp"><b>Location:</b>
                     <div className="subopp"> {option.location} </div>
+                </div>
+            )}
+            {option.role && (
+                <div className="opp"><b>Role:</b>
+                    <div className="subopp"> {option.role} </div>
                 </div>
             )}
             {option.duration && (
@@ -49,6 +64,19 @@ return (
             {option.qualifications && (
                 <div className="opp"><b>Qualifications:</b>
                     {option.qualifications.map((options, index) => {
+                        return (
+                            <div className="subopp" key={index}>
+                                <ul>
+                                    <li>{options}</li>
+                                </ul>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+            {option.why && (
+                <div className="opp"><b>Why Join Us:</b>
+                    {option.why.map((options, index) => {
                         return (
                             <div className="subopp" key={index}>
                                 <ul>
