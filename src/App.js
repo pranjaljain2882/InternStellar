@@ -1,11 +1,13 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar/NavBar";
 import { BrowserRouter as Router,  Route, Routes,useParams } from "react-router-dom";
-import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { Contact } from "./components/Pages/Contact";
-import { Opportunity } from "./components/Pages/Opportunity";
+import { Home } from "./components/Pages/Home/Home";
+import { About } from "./components/Pages/About/About";
+import { Contact } from "./components/Pages/Contact/Contact";
+import { Opportunity } from "./components/Pages/Opportunity/Opportunity";
 import { OpportunityInfo } from "./components/Pages/OpportunityInfo/OpportunityInfo.js";
+import FooterLinks from "./components/Pages/AuxiliaryPages/FooterLinks";
+
 
 
 function App() {
@@ -13,7 +15,6 @@ function App() {
     <>
       <Router>
         <NavBar />
-
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -23,6 +24,8 @@ function App() {
             <Route path="/opportunity/:id" element={<OpportunityInfo/>} />
           </Routes>
         </div>
+        <FooterLinks/>
+
       </Router>
   </>
   );
