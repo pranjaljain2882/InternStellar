@@ -52,6 +52,7 @@
 .interntitle {
     font-family: 'Mukta Vaani', sans-serif;
     font-size: 20px;
+    cursor: pointer;
     /* text-align: center; */
     /* background-color: #d5aa3e; */
     color: black;
@@ -101,3 +102,18 @@
 .subhead{
     color: black;
 }
+.fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

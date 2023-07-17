@@ -9,13 +9,13 @@ export const interndata = [
       stipend: "10k-40k per month",
       location: "Remote",
       skills: "React Native",
-      qualifications: ["• Currently pursuing a Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.",
+      qualifications: ["Currently pursuing a Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.",
 
-      "• Solid understanding of frontend development principles and experience with React Native.",
+      "Solid understanding of frontend development principles and experience with React Native.",
       
-      "• Knowledge of responsive design principles and experience developing mobile-friendly user interfaces.",
+      "Knowledge of responsive design principles and experience developing mobile-friendly user interfaces.",
       
-      "• Familiarity with RESTful APIs and asynchronous programming concepts."],
+      "Familiarity with RESTful APIs and asynchronous programming concepts."],
       link: "https://www.linkedin.com/jobs/view/3662366563",
     },
     {
@@ -28,11 +28,11 @@ export const interndata = [
         stipend: "1 Lakh / Month",
         location: "Multiple Locations",
         skills: "React Native",
-        qualifications: ["• Currently pursuing a Bachelor's, Master's or PhD degree in Computer Science or related technical field.",
+        qualifications: ["Currently pursuing a Bachelor's, Master's or PhD degree in Computer Science or related technical field.",
   
-        "• Experience in software development in one or more general purpose programming languages.",
+        "Experience in software development in one or more general purpose programming languages.",
         
-        "• Ability to speak and write in English fluently.",],
+        "Ability to speak and write in English fluently.",],
         link: "https://www.google.com/about/careers/applications/jobs/results/131573075612181190-software-engineering-intern-summer-2024",
     },
     {

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { interndata } from "../Data/data.js"
 import './Opportunity.css'
 import { useNavigate } from 'react-router-dom';
 
 export const Opportunity = () => {
+    const [isActive, setIsActive] = useState(false);
+    useEffect(() => {
+        setIsActive(true);
+      }, []);
   function getWidth() {
     return Math.max(
         document.body.scrollWidth,
@@ -16,25 +20,21 @@ export const Opportunity = () => {
 
 const navigate = useNavigate();
 
-function handleImageClick(option) {
+function handleClick(option) {
   navigate(`/opportunity/${option.title}`, { state: { option } });
 }
 
 return (
     <>
-        <div className="interndetails">
+        <div className={`interndetails ${isActive ? "fade-in" : ""}`}>
             <div className='interndata'>
                 {interndata.map((option, index) => {
                     return (
                         <div className="interncard" key={index}>
                             <div className="internimg">
-                  <img
-                    src={option.img}
-                    className="img"
-                    onClick={() => handleImageClick(option)}
-                  />
-                </div>
-                            <div className='interntitle'><a href={`${window.location.href}/${option}`} className='interntitle'><b>{option.title}</b></a></div>
+                                <img src={option.img} className="img" onClick={() => handleClick(option)}/>
+                            </div>
+                            <div className='interntitle' className='interntitle' onClick={() => handleClick(option)}><b>{option.title}</b></div>
                             <div className="interndesc">Batch: {option.batch}</div>
                             <div className="interndesc"><b className="subhead">Internship:</b> {option.date}</div>
                             {/* <div className="makebtnspace"></div> */}

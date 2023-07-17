@@ -1,49 +1,69 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './OpportunityInfo.css'
 import { useLocation, useParams } from 'react-router-dom';
 
 export const OpportunityInfo = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+        setIsActive(true);
+      }, []);
+
     const location = useLocation();
     const { option } = location.state;
 return (
     <>
-        <div className="oppinfo">
+        <div className={`oppinfo ${isActive ? "fade-in" : ""}`}>
             <div className="oppimg">
                 <img src={option.img} className="oppimg"/>
             </div>
             <div className="oppdate">POSTED ON: {option.date}</div>
             <div className="opptitle"><b>{option.title}</b></div>
             <div className="oppdesc">{option.companydesc}</div>
-            <div className="oppdesig">Designation:
-                <div className="suboppdesig"> {option.designation} </div>
+            <div className="opp"><b>Designation: </b>
+                <div className="subopp"> {option.designation} </div>
             </div>
-            <div className="oppbatch">Batch Eligible:
-                <div className="suboppbatch"> {option.batch} </div>
+            <div className="opp"><b>Batch Eligible:</b>
+                <div className="subopp"> {option.batch} </div>
             </div>
             {option.stipend && (
-                <div className="oppstipend">Stipend Per Month:
-                    <div className="suboppbatch"> {option.stipend} </div>
+                <div className="opp"><b>Stipend Per Month:</b>
+                    <div className="subopp"> {option.stipend} </div>
                 </div>
             )}
             {option.location && (
-                <div className="opplocation">Location:
-                    <div className="subopplocation"> {option.location} </div>
+                <div className="opp"><b>Location:</b>
+                    <div className="subopp"> {option.location} </div>
                 </div>
             )}
             {option.duration && (
-                <div className="oppduration"> Duration:
-                    <div className="suboppduration">{option.duration}</div>
+                <div className="opp"> Duration:
+                    <div className="subopp">{option.duration}</div>
                 </div>
             )}
             {option.skills && (
-                <div className="oppskills"> Duration:
-                    <div className="suboppskills">{option.skills}</div>
+                <div className="opp"><b>Skills:</b>
+                    <div className="subopp">{option.skills}</div>
                 </div>
             )}
-            <a href={option.link} target="_blank">Check Here...</a>
+            {option.qualifications && (
+                <div className="opp"><b>Qualifications:</b>
+                    {option.qualifications.map((options, index) => {
+                        return (
+                            <div className="subopp" key={index}>
+                                <ul>
+                                    <li>{options}</li>
+                                </ul>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+            <div className="opp">
+                <a href={option.link} target="_blank">Check Here To Apply</a>
+            </div>
         </div>
     </>
 )
 };
 
-    //   qualifications: 
