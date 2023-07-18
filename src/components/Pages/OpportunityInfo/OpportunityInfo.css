@@ -34,6 +34,7 @@
     text-align: left;
 }
 
+
 .subopp{
     color: grey;
     margin-top: 1%;
@@ -42,6 +43,8 @@
 
 .opp>a{
     color:#fec771;
+    text-decoration: none;
+
 }
 .opp>a:hover{
     color:rgb(0, 75, 145)
