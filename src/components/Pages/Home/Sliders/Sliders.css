@@ -1,13 +1,26 @@
 .container-slider {
-    max-width: 950px;
+    max-width: 1000px;
     height: 450px;
     margin: 30px auto 0;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
     border: 20px solid #fafafa;
-    margin-bottom: 150px;
-    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.sliderimg{
+    width: 45%;
+}
+
+.slidertext{
+    font-size: 2rem;
+    margin: auto;
+    padding: 2rem;
+    width: 48%;
+    text-align: left;
+    line-height: 45px;
 }
 
 .btn-slide {
@@ -33,6 +46,7 @@
     .container-slider {
         height: 50vw;
         width: 85%;
+        margin-bottom: 50px;
     }
 
     .btn-slide {
@@ -47,12 +61,34 @@
     }
 }
 
+@media screen and (max-width: 906px){
+    .slidertext{
+        padding: 1rem;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 607px){
+    .slidertext{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .slidertext{
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
 .slide {
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity ease-in-out 0.4s;
+    display: flex;
 }
 
 .objinfo {
@@ -103,7 +139,6 @@
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .active-anim {

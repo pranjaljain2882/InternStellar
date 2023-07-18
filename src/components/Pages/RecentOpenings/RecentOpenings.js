@@ -31,7 +31,7 @@ export const RecentOpenings = () => {
                         </div>
                     );
                   })}
-            <div className="btn recentbtn"><a href='/opportunity'>Show More</a></div>
+            <div className="btn"><a href='/opportunity'>Show More</a></div>
         </div>
 
     </div>

@@ -34,6 +34,7 @@ export const Home = () => {
       <Sliders/>
 
       <div className="interndetails">
+        {/* <h5 className="h5">Recent Openings</h5> */}
             <div className='interndata'>
                 {interndata.slice(0, 6).map((option, index) => {
                   return (

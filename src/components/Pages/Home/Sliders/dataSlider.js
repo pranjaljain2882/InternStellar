@@ -1,21 +1,22 @@
+import img1 from '../../../images/slider1.png'
+// import img2 from '../../../images/slider2.svg'
+// import img3 from '../../../images/slider3.svg'
+
 const dataSlider = [
     {
-      img: "https://bpac.in/wp-content/uploads/2020/11/women-safety.png",
+      img: img1,
       id: 1,
-      title: "",
-      links: "https://bpac.in/top-10-safety-measures-which-must-be-implemented-for-women/"
+      title: "Internships may not require physical strength, but initiative definitely does"
     },
     {
-      img: "https://wbl.worldbank.org/content/dam/sites/wbl/img/780x439/WBL_Report%202022_Cover%20Thumbnails_780X439.jpg",
+      img: img1,
       id: 2,
-      title: "",
-      links: "https://wbl.worldbank.org/en/wbl"
+      title: "Grow through what you go through!!"
     },
     {
-      img: "https://www.openglobalrights.org/userfiles/image/Levenstein_Image_20_09_28(EN).jpg",
+      img: img1,
       id: 3,
-      title: "",
-      links: "https://www.openglobalrights.org/the-forgotten-origins-of-womens-rights-are-human-rights/"
+      title: "Your one-step solution for your jobs and intership related queries"
     },
     
   ];

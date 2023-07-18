@@ -1,6 +1,22 @@
 export const interndata = [
   {
     type:"Internship",
+    img: "https://internfreak.co/uploads/sharechat.png",
+    date: "7/18/2023",
+    title: "ML Intern - Generative AI Freshers Job Opening At ShareChat",
+    companydesc: "ShareChat (https://sharechat.com/about) is India’s largest social media and content marketplace platform that operates exclusively in Indic languages. We empower over 300 million strong monthly active users to share their opinions, record their lives and make new friends - all within the comfort of their language of choice. We are the leaders in the social content space in India with Moj being India’s largest short- video platform (160+ million MAUs, 50 million creators), and Sharechat being India’s leading social media and content marketplace platform that operates exclusively in 15 Indic languages (180 million MAUs, 32+ million creators).", 
+    designation: "ML Intern",
+    batch: "2023, 2024",
+    location: "Remote",
+    qualifications: ["Familiarity with LLMs/Diffusion models",
+    "Comfortable in working on machine learning frameworks like Tensorflow, PyTorch and libraries like scikit-learn",
+    "Outstanding analytical and problem-solving skillsExcellent coding skills in at least one of Python, Go, C/C++, Java, NodeJS. Knowledge of SQL is a huge plus",
+    "Understanding of data structures, data modeling and software architecture",
+    "Some knowledge of agile development methodologies (Git/Github, Docker, Jupyter Notebook)"],
+    link: "https://sharechat.mynexthire.com/employer/jobs?p=eyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjE2MjAsInJlcXVlc3RlciI6eyJpZCI6IiIsImNvZGUiOiIiLCJuYW1lIjoiIn0sInBhZ2UiOiJjYXJlZXJzIiwiYnVmaWx0ZXIiOi0xfQ%3D%3D" 
+  },
+  {
+    type:"Internship",
     img: "https://internfreak.co/uploads/Stack.png",
     date: "7/17/2023",
     title: "Stack(YC S21) is hiring for Software Engineer Intern (Vuejs)",

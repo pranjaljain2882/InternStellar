@@ -3,12 +3,15 @@
     background-color: #fab342;
     font-size: 20px;
     padding: 3px 4px;
-    margin: 3rem;
-    margin-left: 45%;
+    margin: 3rem auto;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    width: 10%;
+    max-width: max-content;
+}
+
+.h5{
+    margin: 4rem;
 }
 
 .btn>a {
@@ -18,13 +21,21 @@
 
 .btn:hover {
   background-color: rgb(255, 255, 255);
-  color: #fab342;
+  transition: background-color 0.3s ease, color 0.3s ease;
   /* -moz-box-shadow: inset -5px -5px 5px 5px #928f8f;
   -webkit-box-shadow: inset -5px -5px 5px 5px #928f8f; */
   box-shadow:  -3px -3px 3px 3px #928f8f;
 }
-
+.btn:hover a {
+    color: #fab342;
+  }
 
 .btn>a:hover{
     color: #fab342;
+}
+
+@media screen and (max-width:711px){
+    .h5{
+        margin: 2rem 0rem;
+    }
 }

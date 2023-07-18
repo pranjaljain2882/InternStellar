@@ -56,10 +56,14 @@ export function Sliders() {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            <img
-              src={obj.img}
-            />
-          
+            <div className='sliderimg'>
+              <img src={obj.img} ></img>
+            </div>
+            <div className='slidertext'>
+              <b>
+                {obj.title}
+              </b>
+            </div>
           </div>
         )
       })}
