@@ -10,7 +10,7 @@ export const Contact = () => {
 
   return (
     <div className={`contact-container ${isActive ? "fade-in" : ""}`}>
-      <h6>Contact Us</h6>
+      <h4>Contact Us</h4>
       <form className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>

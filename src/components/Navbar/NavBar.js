@@ -11,8 +11,9 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            InternStellar
-            <i className="fas fa-code"></i>
+          <i className="fas fa-code"></i>
+          &nbsp;InternStellar
+            
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
