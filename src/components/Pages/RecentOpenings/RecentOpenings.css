@@ -1,6 +1,6 @@
 .recent{
     /* border: 2px solid hotpink; */
-    width: 70%;
+    width: 55%;
     margin: auto;
     margin-top: 10%;
 }
@@ -43,9 +43,9 @@
 }
 
 
-@media screen and (max-width:711px) {
+@media screen and (max-width:1000px) {
     .recent{
-        width: 90%;
+        width: 80%;
         /* margin-left: 11%; */
     }
     .recentimg {

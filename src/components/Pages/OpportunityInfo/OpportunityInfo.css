@@ -8,6 +8,7 @@
     height: 170px;
     border-radius: 10px;
     margin: auto;
+    margin-left: -2.5%;
 }
 
 .oppdate{
@@ -17,19 +18,20 @@
 }
 
 .opptitle{
-    font-size: 35px;
+    font-size: 50%;
     margin: 3rem;
 }
 
 .oppdesc{
     font-size: 22px;    
     color: grey;
-    margin: 3rem;
+    /* margin: 3rem; */
     text-align: left;
 }
 
 .opp{
-    margin: 3rem;
+    /* margin: 3rem; */
+    margin-top: 3rem;
     font-size: 22px;  
     text-align: left;
 }

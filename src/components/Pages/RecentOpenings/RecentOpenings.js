@@ -23,7 +23,7 @@ export const RecentOpenings = () => {
   return (
 
       <div className='recent'>
-        <h5>Recent Openings</h5>
+        <h6>Recent Openings</h6>
             <div className='recentdata'>
                 {interndata.slice(0, 6).map((option, index) => {
                   return (
