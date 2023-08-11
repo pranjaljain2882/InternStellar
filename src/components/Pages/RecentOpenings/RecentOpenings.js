@@ -10,8 +10,15 @@ export const RecentOpenings = () => {
 
   function handleClick(option) {
     navigate(`/opportunity/${option.title}`, { state: { option } });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
   }
 
+  function showClick() {
+    navigate(`/opportunity`);
+  }
 
   return (
 
@@ -31,7 +38,7 @@ export const RecentOpenings = () => {
                         </div>
                     );
                   })}
-            <div className="btn"><a href='/opportunity'>Show More</a></div>
+            <div className="btn" onClick={showClick}><p>Show More</p></div>
         </div>
 
     </div>

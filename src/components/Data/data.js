@@ -1,6 +1,23 @@
 export const interndata = [
   {
     type:"Internship",
+    img: "https://internfreak.co/uploads/ProPeers.png",
+    date: "8/11/2023",
+    title: "Hiring React Native Developer Intern at ProPeers",
+    companydesc: "Join ProPeers, a dynamic and forward-thinking team that's revolutionizing the way people connect with mentors. Our platform simplifies the process of finding the right mentors to help answer your queries, allowing you to focus on your personal and professional growth.", 
+    designation: "React Native Developer Intern",
+    batch: "2023, 2024, 2025, 2026",
+    stipend: "20k per month",
+    location: "Remote",
+    qualifications: ["Collaborate with the product manager and the design team to validate and implement new features through experimentation.",
+    " Monitor application performance and proactively address bugs to optimize the user experience.",
+    "Refactor and rewrite obsolete code, ensuring alignment with our updated architecture.",
+    "Design, develop, and maintain a high-performance, reusable, and reliable code base using React Native.",
+    "Stay abreast of emerging technologies, evaluate their potential impact, and implement relevant solutions to enhance development efficiency."],
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfveaydnRmQ3DSIFSW-KGVtMBoGAuxsxbbHfhZypPpP0GaQaA/viewform"
+  },
+  {
+    type:"Internship",
     img: "https://internfreak.co/uploads/sharechat.png",
     date: "7/18/2023",
     title: "ML Intern - Generative AI Freshers Job Opening At ShareChat",

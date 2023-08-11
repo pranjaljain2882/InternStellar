@@ -7,6 +7,12 @@ export const OpportunityInfo = () => {
     const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", 
+          });
+
         setIsActive(true);
       }, []);
 

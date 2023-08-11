@@ -18,6 +18,10 @@ export const Home = () => {
     navigate(`/opportunity/${option.title}`, { state: { option } });
   }
 
+  function showClick() {
+    navigate(`/opportunity`);
+  }
+
   function getWidth() {
     return Math.max(
         document.body.scrollWidth,
@@ -51,7 +55,7 @@ export const Home = () => {
                     );
                   })}
             </div>
-            <div className="btn"><a href='/opportunity'>Show More</a></div>
+            <div className="btn" onClick={showClick}><p>Show More</p></div>
         </div>
 
     </div>
