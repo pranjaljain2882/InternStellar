@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom';
 export const Opportunity = () => {
     const [isActive, setIsActive] = useState(false);
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", 
+          });
+          
         setIsActive(true);
       }, []);
   function getWidth() {
