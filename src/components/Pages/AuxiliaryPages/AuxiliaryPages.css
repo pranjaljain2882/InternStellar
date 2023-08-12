@@ -59,10 +59,25 @@
   }
   
 
-  /* @media screen and (max-width:800px) {
-    .about-container {
-      max-width: 90%;
-      margin: 0 auto;
-
+  @media screen and (max-width:800px) {
+    .about-title {
+      font-size: 40%;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #615b5b;
     }
-} */
+
+    .about-container {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 60px;
+        background-color: #f9f9f9;
+        color: #4d4e4e;
+        border-radius: 5px;
+        font-family: poppins,Arial,sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+    
+}

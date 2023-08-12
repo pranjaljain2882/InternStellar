@@ -107,5 +107,17 @@
       margin-bottom: 20px;
       color: #838282;
     }
+
+    .contact-container {
+      max-width: 70%;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 60px;
+      background-color: #f9f9f9;
+      color: #4d4e4e;
+      border-radius: 5px;
+      font-family: poppins,Arial,sans-serif;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 }
   
