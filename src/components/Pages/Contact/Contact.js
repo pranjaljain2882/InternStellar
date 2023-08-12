@@ -11,7 +11,7 @@ export const Contact = () => {
   return (
     <div className={`contact-container ${isActive ? "fade-in" : ""}`}>
       <h4>Contact Us</h4>
-      <form className="contact-form">
+      <form className="contact-form" action="https://formsubmit.co/pranjaldaga56@gmail.com" method="POST">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Your name" />
