@@ -31,7 +31,7 @@ function FooterLinks() {
           Disclaimer
         </Link>
         <Link
-          to="/terms-of-services"
+          to= "/termsofservices"
           style={{ textDecoration: "none", color: "black", marginRight: "18px", fontSize: "12px" }}
         >
           Terms of Services
