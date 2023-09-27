@@ -8,7 +8,7 @@ export const interndata = [
     designation: "React Native Developer Intern",
     batch: "2023, 2024, 2025, 2026",
     stipend: "20k per month",
-    location: "Hybrid",
+    location: "Remote",
     qualifications: ["Collaborate with the product manager and the design team to validate and implement new features through experimentation.",
     " Monitor application performance and proactively address bugs to optimize the user experience.",
     "Refactor and rewrite obsolete code, ensuring alignment with our updated architecture.",
